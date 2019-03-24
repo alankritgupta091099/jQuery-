@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            hide show
+        </title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide(900)
+                })
+                $("#show").click(function(){
+                    $("p").show(900)
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <p id="txt">this text</p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </body>
+</html>

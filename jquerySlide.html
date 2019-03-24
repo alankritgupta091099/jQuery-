@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            slideDown
+        </title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#slide").click(function(){
+                    $("#img").slideDown("slow"); 
+                });
+                $("#hide").click(function(){
+                    $("#img").slideUp("slow");
+                });
+            });
+        </script>
+        <style>
+            #img {
+                display:none
+            }    
+        </style>
+    </head>
+    <body>
+        <img id="img"src="bulbOn.png" display=none></img>
+        <button id="slide">slide</button>
+        <button id="hide">hide</button>
+    </body>
+</html>

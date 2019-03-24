@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            jquery
+        </title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#move1").click(function(){
+                    $("#moveLeft").animate({
+                        left:'250px'
+                    });
+                });
+                $("#move2").click(function(){
+                    $("#moveResize").animate({
+                        left:'250px',
+                        opacity:'0.5',
+                        height:'150px',
+                        width:'150px'
+                    });
+                })
+                $("#move3").click(function(){
+                    $("#moveVariation").animate({
+                        opacity:'0.5',
+                        height:'300px', 
+                    });
+                    $("#moveVariation").animate({
+                        top:'500px',
+                        opacity:'1',
+                        height:'100px',
+                        width:'300px'
+                    });
+                })
+            });
+        </script>
+    </head>
+    <body>
+            <button id="move1" >move</button><br>
+            <div id="moveLeft" style="background:#98bf21 ; position:absolute ; height:100px; width:100px"></div><br><br><br><br><br><br><br>
+            <button id="move2" >move</button><br>
+            <div id="moveResize" style="background:#98bf21 ; position:absolute ; height:100px; width:100px"></div><br><br><br><br><br><br><br>
+            <button id="move3" >move</button><br>
+            <div id="moveVariation" style="background:#98bf21 ; position:absolute ; height:100px; width:100px"></div><br><br><br><br><br><br><br>
+    </body>
+</html>

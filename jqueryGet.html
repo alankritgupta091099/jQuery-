@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            jquery
+        </title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#showValue").click(function(){
+                    alert("Text: "+$("#text").text());
+                });
+                $("#showHTML").click(function(){
+                    alert("HTML: "+$("#text").html());
+                });
+                $("#btn1").click(function(){
+                    alert("Value: " + $("#textBox").val());
+                });
+                $("#btn2").click(function(){
+                    alert($("#webSite").attr("href"));
+                });
+            });
+        </script>
+    </head>
+    <body>
+           <p id="text">This is <b>abccd</b>text</p>
+           <button id="showValue">Show value</button>
+           <button id="showHTML">Show HTML</button><br><br>
+           Name: <input type="text" id="textBox"value="abcd"></input>
+           <button id="btn1">show</button><br><br>
+           <p><a href="https://www.w3schools.com/jquery/jquery_dom_get.asp  " id="webSite">w3schools</a></p>
+           <button id="btn2">show</button><br><br>
+    </body>
+</html>
